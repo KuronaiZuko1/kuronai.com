@@ -1,0 +1,217 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css);
+
+*{
+    box-sizing: border-box;
+}
+
+h1{
+    text-align: center;
+    color: blue;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    shadow: #ff4900;
+    display: flex;
+    letter-spacing: 8px;
+    justify-content: center;
+    
+}
+
+h1 span{
+    display: inline-block;
+    animation: bounce 0.6s ease infinite;
+}
+
+h1 span:nth-child(1){
+    animation-delay: 0,1s;
+}
+
+h1 span:nth-child(2){
+    animation-delay: 0.3s;
+}
+
+h1 span:nth-child(3){
+    animation-delay: 0,5s;
+}
+
+h1 span:nth-child(4){
+    animation-delay: 0.7s;
+}
+
+h1 span:nth-child(5){
+    animation-delay: 0,9s;
+}
+
+@keyframes bounce{
+    0% 100%{
+        transform:translateY(0);
+    }
+    50%{
+        transform:translateY(-30px);
+    }
+}
+
+body{
+    background-color: #fff;
+    background-position: absolute;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    
+}
+.navbar ul{
+    list-style-type: none;
+    background: linear-gradient(to left, red, blue);
+    padding: 5px;
+    margin: 0;
+    overflow: hidden;
+    border-radius: 5px;
+    
+}
+
+.navbar a{
+    color: #ffffff;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-align: center;
+    margin: 0;
+}
+.navbar a:hover{
+    background-color: #ff9d00;
+    border-radius: 5px;
+}
+.navbar li{
+    float: right;
+    overflow: hidden;
+}
+
+
+div a{
+    text-color: #FFF0000;
+    text-style-type: none;
+    outline: none;
+    padding: 5px 20px;
+    cursor: pointer;
+    z-index: 0;
+}
+
+h2{
+    text-decoration: none;
+    text-align: center;
+    color: green;
+    float: center;
+}
+
+h3{
+    color: black;
+    padding: 5px;
+    font-size:35px;
+    text-align: center;
+}
+
+section a{
+    list-style-type: none;
+    text-color: black;
+}
+
+button{
+    padding: 12px 30px;
+    border-radius: 10px;
+    border: none;
+    align-items: bottom;
+    z-index: 0;
+    outline: none;
+    position: relative;
+    cursor: pointer;
+    font-weight: 600;
+    background: linear-gradient(to right, #2babff, #8515ff);
+    color: white;
+}
+
+button::after{
+    content: '';
+    z-index: -1;
+    position: absolute;
+    width: 0px;
+    height: 100%;
+    background: linear-gradient(to right, #ff000a, #e3ff00);
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+    transition: 150ms ease-in-out;
+}
+
+
+button:hover::after{
+    width: 100%;
+}
+
+button:hover{
+    color: black;
+}
+
+
+b{
+    color: #FF0000;
+}
+
+form{
+    background-color: #65ff00;
+    display: flex;
+    border: 2px solid #ccc;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding:50px 100px;
+    height: 100%;
+    border-radius: 10px;
+}
+
+
+input{
+    padding: 12px 20px;
+    border: 1px solid #ccc;
+    margin: 8px 0;
+    background-color: #ffffff;
+    height: 100%;
+    border-radius: 10px;
+    }
+
+li {
+    list-style-type: none;
+}
+
+p{
+    color:#ff00c7;
+    padding:5px;
+    font-size: 30px;
+}
+
+
+.box{
+    background-color: #ff1f00;
+    height: 25px;
+    border-radius: 5px;
+    display: flex;
+    padding: 25px;
+    align-items: center;
+    justify-content: space-between;
+    float: right;
+}
+
+.fa-twitter{
+    font-size: 50px;
+    color: #40cbff;
+}
+
+.fa-facebook{
+    font-size: 50px;
+    color: #1523ffcd;
+}
+
+.fa-youtube{
+    font-size: 50px;
+    color: orangered;
+}
